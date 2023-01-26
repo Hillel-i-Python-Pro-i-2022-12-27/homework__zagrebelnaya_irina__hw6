@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Files content</title>
+</head>
+<body>
+{% block content %}
+    <h1>{% block title %} Files content {% endblock %}</h1>
+    <p>{{ get_content_from_file }}</p>
+{% endblock %}
+</body>
+</html>
