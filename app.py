@@ -7,6 +7,11 @@ import asyncio
 app = Flask(__name__)
 
 
+@app.route("/")
+def hello_world():  # put application's code here
+    return "Hello!"
+
+
 @app.route("/generate-users/")
 def generate_users():  # put application's code here
     users = print_result_of_generation_users(number=5)
